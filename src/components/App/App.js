@@ -16,8 +16,8 @@ function App() {
       <h1>IdeaBox</h1>
       <p>Hi!</p>
       <Ideas name='Travis'/>
-      <Ideas name='Ben' phone='867-5309'/>
-      <Ideas phone='867-5309'/>
+      {/* <Ideas name='Ben' phone='867-5309'/>
+      <Ideas phone='867-5309'/> */}
     </main>
   )
 }
