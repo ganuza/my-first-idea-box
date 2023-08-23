@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Ideas from '../Ideas/Ideas'
+import Form from '../Form/Form'
 
 function App() {
   const dummyIdeas = [
@@ -17,6 +18,7 @@ function App() {
       <h1>IdeaBox</h1>
       {!ideas.length && <h2>No ideas yet -- add some!</h2>}
       <Ideas ideas={ideas} />
+      <Form />
     </main>
   )
 }
