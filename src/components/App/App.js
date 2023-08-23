@@ -13,12 +13,17 @@ function App() {
 
   console.log(ideas)
 
+  function addIdea (newIdea) {
+    setIdeas([...ideas, newIdea])
+  }
+
   return (
     <main className='App'>
       <h1>IdeaBox</h1>
       {!ideas.length && <h2>No ideas yet -- add some!</h2>}
+      
+      <Form addIdea={addIdea}/>
       <Ideas ideas={ideas} />
-      <Form />
     </main>
   )
 }
